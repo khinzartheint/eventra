@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/tickets"
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/tickets`
 
 async function readResponse(response) {
   const contentType = response.headers.get("content-type")

@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/events"
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/events`
 
 export async function getAllEvents() {
   const response = await fetch(API_URL)
